@@ -4,12 +4,10 @@ import wordcloud
 #ports to a set, counting instances of duplicate words
 #creates a wordcloud of the resulting set
 
-opened_file = open('<your text file>', 'r', encoding='utf-8')
+opened_file = open(<'your text file'>, 'r', encoding='utf-8')
 file_contents = opened_file.read()
 
 def calculate_frequencies():
-    filtered_characters = ""
-    processed = ""
     punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
     uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my", \
         "we", "our", "ours", "you", "your", "yours", "he", "she", "him", "his", "her", "hers", "its", "they", "them", \
